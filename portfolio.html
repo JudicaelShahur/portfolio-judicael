@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Judicael</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
+</head>
+<body>
+    <!-- menu Nav -->
+  <div class="container">
+   <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Portfolio Judicael</p>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">              
+                    <li class="nav_list">
+                        <a href="#home" class="nav-link active-link">Accueil</a>
+                        <div class="circle"></div>
+                    </li>                   
+                        <li class="nav_list">
+                            <a href="#about" class="nav-link">À propos</a>
+                            <div class="circle"></div>
+                        </li>                      
+                            <li class="nav_list">
+                                <a href="#projects" class="nav-link">Projets</a>
+                                <div class="circle"></div>
+                            </li>                         
+                                <li class="nav_list">
+                                    <a href="#contact" class="nav-link">Contact</a>
+                                    <div class="circle"></div>
+                                </li>
+            </ul>
+        </div>
+          <!-- Dark Mode -->
+  <div class="mode">
+    <div class="moon-sun" id="toggle-switch">
+        <i class="fa fa-moon" id="moon"></i>
+        <i class="fa fa-sun" id="sun"></i>
+    </div>
+  </div>
+  <div class="nav-menu-btn">
+    <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+  </div>
+   </nav>
+   <!--main-->
+   <main class="wrapper">
+    <section class="featured-box" id="home">
+        <div class="featured-text">
+            <div class="hello">
+                <p>Salut</p>
+            </div>
+            <div class="featured-name">
+                <span class="typedText"></span>
+            </div>
+            <div class="text-info">
+                <p>Mon nom est Judicael, je suis développeur web avec plus de 1 ans d'expérience.</p>
+            </div>
+            <div class="text-btn">
+                <button class="btn hire-btn">Embauchez-moi</button>
+                <button class="btn">Télécharger le CV <i class="uil uil-file"></i></button>
+            </div>
+            <div class="socical_icons">
+                <div class="icon_cercle"></div>
+                <div class="icon"><i class="uil uil-whatsapp"></i></div>
+                <div class="icon"><i class="uil uil-facebook"></i></div>
+                <div class="icon"><i class="uil uil-envelope"></i></div>
+                <div class="icon"><i class="uil uil-github-alt"></i></div>
+            </div>
+        </div>
+        <div class="featured-image">
+            <div class="image">
+                <img src="judicael.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!--about box-->
+    <section class="section" id="about">
+        <div class="top-header">
+            <h1>À propos de moi</h1>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <figure class="about-me">
+                        <figcaption>
+                          <img src="judicael.png" class="profile"/> 
+                          <h2>Developpeur</h2>
+                          <p>Mon nom est Judicael, je suis développeur web avec plus de 1 ans d'expérience.</p> 
+                    </figure>
+                    <button class="about-me-btn">Embauchez-moi</button>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-box">
+                    <span class="title">HTML</span>
+                    <div class="skill-bar ">
+                        <span class="skill-per html">
+                            <span class="tooltip">75%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">CSS</span>
+                    <div class="skill-bar ">
+                        <span class="skill-per css">
+                            <span class="tooltip">70%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">PHP</span>
+                    <div class="skill-bar ">
+                        <span class="skill-per php">
+                            <span class="tooltip">70%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">Python</span>
+                    <div class="skill-bar">
+                        <span class="skill-per python">
+                            <span class="tooltip">40%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">Nodejs</span>
+                    <div class="skill-bar">
+                        <span class="skill-per nodjs">
+                            <span class="tooltip">65%</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- <div class="skill-box">
+                    <span class="title">Java</span>
+                    <div class="skill-bar">
+                        <span class="skill-per java">
+                            <span class="tooltip">60%</span>
+                        </span>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!--Projects box-->
+    <section class="section" id="projects">
+        <div class="top-header">
+            <h1>Projet</h1>
+        </div>
+        <div class="project-container">
+            <div class="project-box">
+                <i class="uil uil-briefcase-alt"></i>
+                <h3>Terminé</h3>
+                <label> Application terminée +5</label>
+            </div>
+            <div class="project-box">
+                <i class="uil uil-users-alt"></i>
+                <h3>Client</h3>
+                <label> client plus de +5</label>
+            </div>
+            <div class="project-box">
+                <i class="uil uil-award"></i>
+                <h3>Expérience</h3>
+                <label>1 an sur le développement d'application </label>
+            </div>
+        </div>
+    </section>
+    <!--contact box-->
+    <section class="section" id="contact">
+        <div class="top-header">
+            <h1>Travaillons ensemble</h1>
+            <span>avez-vous un projet en tête ? Contactez-moi ici.</span>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="contact-info">
+                    <h2>Trouvez-moi<i class="uil uil-corner-rigth-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i>email:judicaelsafidiniaina@gmail.com</p>
+                    <p><i class="uil uil-phone"></i>Tel:0343517339</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-control">
+                    <div class="form-inputs">
+                        <input type="text" class="input-field" placeholder="votre nom">
+                        <input type="text" class="input-field" placeholder="email email">
+                    </div>
+                    <div class="test-area">
+                        <input type="text" class="input-subject" placeholder="Subject">
+                        <textarea placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-button">
+                        <button class="btn">Envoyer <i class="uiluil-message"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   </main>
+   <!-- footer -->
+   <footer>
+    <div class="middle-footer">
+        <ul class="footer-menu">
+            <li class="footer_menu_list"><a href="#home">Accueil</a></li>
+            <li class="footer_menu_list"><a href="#about">À propos</a></li>
+            <li class="footer_menu_list"><a href="#projects">Projets</a></li>
+            <li class="footer_menu_list"><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="footer-socical-icons">
+        <div class="icon"><i class="uil uil-whatsapp"></i></div>
+        <div class="icon"><i class="uil uil-facebook"></i></div>
+        <div class="icon"><i class="uil uil-envelope"></i></div>
+        <div class="icon"><i class="uil uil-github-alt"></i></div>
+    </div>
+    <div class="bottom-footer">
+        <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Judicael</a> - Tous droits réservés 2025</p>
+    </div>
+</footer>
+
+  </div>
+<script src=""></script>
+</body>
+</html>
