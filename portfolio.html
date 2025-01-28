@@ -51,24 +51,36 @@
     <section class="featured-box" id="home">
         <div class="featured-text">
             <div class="hello">
-                <p>Salut</p>
+                <p>Salutation</p>
             </div>
             <div class="featured-name">
                 <span class="typedText"></span>
             </div>
             <div class="text-info">
-                <p>Mon nom est Judicael, je suis développeur web avec plus de 1 ans d'expérience.</p>
+                <p>Mon nom est Judicael, je suis développeur web avec plus de 1 an d'expérience.</p>
             </div>
             <div class="text-btn">
-                <button class="btn hire-btn">Embauchez-moi</button>
-                <button class="btn">Télécharger le CV <i class="uil uil-file"></i></button>
+                <button class="btn hire-btn" onclick="openContactForm()">Embauchez-moi</button>
+                <button class="btn">
+                    <a href="cv/judicael_cv.pdf" download="Judicael_CV.pdf" style="text-decoration: none; color: inherit;">
+                        Télécharger le CV <i class="uil uil-file"></i>
+                    </a>
+                </button>
             </div>
+            
+            <script>
+                function openContactForm() {
+                    // Exemple : Rediriger vers la section contact
+                    document.getElementById('contactForm').scrollIntoView({ behavior: 'smooth' });
+                }
+            </script>
+            
             <div class="socical_icons">
                 <div class="icon_cercle"></div>
-                <div class="icon"><i class="uil uil-whatsapp"></i></div>
-                <div class="icon"><i class="uil uil-facebook"></i></div>
-                <div class="icon"><i class="uil uil-envelope"></i></div>
-                <div class="icon"><i class="uil uil-github-alt"></i></div>
+                <div class="icon"><a  href="https://api.whatsapp.com/send/?phone=261343517339&text=Bonjour,%20je%20souhaite%20plus%20d'informations&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"><i class="uil uil-whatsapp"></i></a></div>
+                <div class="icon"><a href="https://www.facebook.com/share/19vKj2Rn8y/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer"><i class="uil uil-facebook"></i></a></div>
+                <div class="icon"><a href="mailto:judicaelsafidiniaina@gmail.com?subject=Discussion%20avec%20vous&body=Bonjour,%20je%20souhaite%20commencer%20une%20discussion%20avec%20vous." target="_blank" rel="noopener noreferrer"><i class="uil uil-envelope"></i></a></div>
+                <div class="icon"> <a href="https://github.com/JudicaelShahur" target="_blank" rel="noopener noreferrer"><i class="uil uil-github-alt"></i></a></div>
             </div>
         </div>
         <div class="featured-image">
@@ -88,31 +100,88 @@
                     <figure class="about-me">
                         <figcaption>
                           <img src="judicael.png" class="profile"/> 
-                          <h2>Developpeur</h2>
-                          <p>Mon nom est Judicael, je suis développeur web avec plus de 1 ans d'expérience.</p> 
+                          <h2>Développeur Fullstack</h2>
+                          <p>Mon nom est Safidiniaina Judicael, je suis développeur web avec plus de 1 ans d'expérience.</p> 
                     </figure>
-                    <button class="about-me-btn">Embauchez-moi</button>
+                    <button class="about-me-btn" onclick="openContactForm()">Embauchez-moi</button>
                 </div>
             </div>
+            <div class="skill1">
+                <div class="tete1">
+                    <h2>Langage</h2>
+                </div>
+                
+                <div class="skill-box1">
+                    <span class="title1">HTML</span>
+                    <div class="skill-bar1 ">
+                        <span class="skill-per1 html1">
+                            <span class="tooltip1">75%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box1">
+                    <span class="title1">CSS</span>
+                    <div class="skill-bar1 ">
+                        <span class="skill-per1 css1">
+                            <span class="tooltip1">70%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box1">
+                    <span class="title1">PHP</span>
+                    <div class="skill-bar1 ">
+                        <span class="skill-per1 php1">
+                            <span class="tooltip1">70%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box1">
+                    <span class="title1">Python</span>
+                    <div class="skill-bar1">
+                        <span class="skill-per1 python1">
+                            <span class="tooltip1">40%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box1">
+                    <span class="title1">Javascript</span>
+                    <div class="skill-bar1">
+                        <span class="skill-per1 nodjs1">
+                            <span class="tooltip1">40%</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- <div class="skill-box">
+                    <span class="title">Java</span>
+                    <div class="skill-bar">
+                        <span class="skill-per java">
+                            <span class="tooltip">60%</span>
+                        </span>
+                    </div>
+                </div> -->
+            </div>
             <div class="skill">
+                <div class="tete">
+                    <h2>Frameworks</h2>
+                </div>             
                 <div class="skill-box">
-                    <span class="title">HTML</span>
+                    <span class="title">React</span>
                     <div class="skill-bar ">
                         <span class="skill-per html">
-                            <span class="tooltip">75%</span>
+                            <span class="tooltip">60%</span>
                         </span>
                     </div>
                 </div>
                 <div class="skill-box">
-                    <span class="title">CSS</span>
+                    <span class="title">Angular</span>
                     <div class="skill-bar ">
                         <span class="skill-per css">
-                            <span class="tooltip">70%</span>
+                            <span class="tooltip">50%</span>
                         </span>
                     </div>
                 </div>
                 <div class="skill-box">
-                    <span class="title">PHP</span>
+                    <span class="title">Laravel</span>
                     <div class="skill-bar ">
                         <span class="skill-per php">
                             <span class="tooltip">70%</span>
@@ -120,10 +189,10 @@
                     </div>
                 </div>
                 <div class="skill-box">
-                    <span class="title">Python</span>
+                    <span class="title">Flask</span>
                     <div class="skill-bar">
                         <span class="skill-per python">
-                            <span class="tooltip">40%</span>
+                            <span class="tooltip">50%</span>
                         </span>
                     </div>
                 </div>
@@ -165,7 +234,7 @@
             <div class="project-box">
                 <i class="uil uil-award"></i>
                 <h3>Expérience</h3>
-                <label>1 an sur le développement d'application </label>
+                <label>1 an sur le développement d'application web </label>
             </div>
         </div>
     </section>
@@ -184,20 +253,38 @@
                 </div>
             </div>
             <div class="col">
-                <div class="form-control">
-                    <div class="form-inputs">
-                        <input type="text" class="input-field" placeholder="votre nom">
-                        <input type="text" class="input-field" placeholder="email">
+                <form id="contactForm">
+                    <div class="form-control">
+                        <div class="form-inputs">
+                            <input type="text" id="name" class="input-field" placeholder="Votre nom" required>
+                            <input type="email" id="email" class="input-field" placeholder="Email" required>
+                        </div>
+                        <div class="test-area">
+                            <input type="text" id="subject" class="input-subject" placeholder="Objet" required>
+                            <textarea id="message" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="form-button">
+                            <button type="button" class="btn" onclick="sendEmail()">Envoyer <i class="uil uil-message"></i></button>
+                        </div>
                     </div>
-                    <div class="test-area">
-                        <input type="text" class="input-subject" placeholder="Subject">
-                        <textarea placeholder="Message"></textarea>
-                    </div>
-                    <div class="form-button">
-                        <button class="btn">Envoyer <i class="uil uil-message"></i></button>
-                    </div>
-                </div>
+                </form>
             </div>
+            
+            <script>
+                function sendEmail() {
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const subject = document.getElementById('subject').value;
+                    const message = document.getElementById('message').value;
+            
+                    const mailtoLink = `mailto:judicaelsafidiniaina@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+                        `Nom: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+                    )}`;
+            
+                    window.location.href = mailtoLink;
+                }
+            </script>
+            
         </div>
     </section>
    </main>
@@ -212,10 +299,10 @@
         </ul>
     </div>
     <div class="footer-socical-icons">
-        <div class="icon"><i class="uil uil-whatsapp"></i></div>
-        <div class="icon"><i class="uil uil-facebook"></i></div>
-        <div class="icon"><i class="uil uil-envelope"></i></div>
-        <div class="icon"><i class="uil uil-github-alt"></i></div>
+        <div class="icon"> <a href="https://me.wa/261343517339" target="_blank" rel="noopener noreferrer"><i class="uil uil-whatsapp"></i></a> </div>
+        <div class="icon"><a href="https://facebook.com/razafindrava.juilliot" target="_blank" rel="noopener noreferrer"><i class="uil uil-facebook"></i></a></div>
+        <div class="icon"><a href="mailto:judicaelsafidiniaina@gmail.com" target="_blank" rel="noopener noreferrer"><i class="uil uil-envelope"></i></a></div>
+        <div class="icon"><a href="https://github.com/JudicaelShahur" target="_blank" rel="noopener noreferrer"><i class="uil uil-github-alt"></i></a></div>
     </div>
     <div class="bottom-footer">
         <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Judicael</a> - Tous droits réservés 2025</p>
